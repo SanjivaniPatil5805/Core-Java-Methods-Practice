@@ -13,6 +13,9 @@ public class MainClass {
 		System.out.println();
 		
 		l1.palindromNumber();
+		System.out.println();
+		
+		l1.armstrongNumber();
 		
 		
 	}

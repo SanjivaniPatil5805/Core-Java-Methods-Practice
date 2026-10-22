@@ -69,6 +69,51 @@ public class LogicPrograms {
 	}
 	
 	
+	public void armstrongNumber() {
+		
+		int num = 1634;
+		int temp1 = num;
+		int temp2 = num;
+		int count = 0;
+		int sum = 0;
+		 
+		while(temp1 >= 1) {
+			
+			temp1 = temp1 / 10;
+			count++;
+			
+		}
+		
+		while(temp2 >= 1) {
+			
+			int digit = temp2 % 10;
+			int power = 1;
+			
+			for(int i = 1; i<= count; i++) {
+				
+				power = power * digit;
+			}
+			
+			sum += power;
+			
+			temp2 =temp2 / 10;
+			
+		}
+	
+		if(num == sum) {
+			
+			System.out.println(num+" is an Armstrong Number.");
+			
+		} else {
+			
+			System.out.println(num+" is not an Armstrong Number.");
+			
+		}
+		
+		
+	}
+	
+	
 	
 	
 }
